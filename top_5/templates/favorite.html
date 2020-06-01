@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<header class="banner">
+    <h1 class="header-text">This is a list of my favorite players</h1>
+</header>
+
+
+{% for key,item in favorite_dict.items() %}
+    <ul>
+        <li>{{ key }} {{ item }}</li>
+    </ul>
+{% endfor %}
+{% endblock content %}
